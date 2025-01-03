@@ -1,0 +1,14 @@
+{
+  "name": "sst-pocketbase",
+  "version": "1.0.0",
+  "description": "Cloud host testing with pocketbase.",
+  "main": "index.js",
+  "scripts": {
+    "sso": "aws sso login --sso-session=fsd",
+    "deploy:gcp": "sst deploy --stage=gcp",
+    "diff:gcp": "sst diff --stage=gcp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
