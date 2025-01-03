@@ -5,3 +5,5 @@
 **/pb_data
 
 pocketbase
+# Google cloud service account file
+sst-apps.json
