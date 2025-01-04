@@ -4,7 +4,7 @@
   "description": "Cloud host testing with pocketbase.",
   "main": "index.js",
   "scripts": {
-    "sso": "aws sso login --sso-session=fsd",
+    "sso": "aws sso login --sso-session=<aws sso session>",
     "deploy:gcp": "sst deploy --stage=gcp",
     "diff:gcp": "sst diff --stage=gcp"
   },
