@@ -6,8 +6,7 @@ const imageName = "pocketbase-small"
 export const image = new docker.Image(imageName, {
   imageName: $interpolate`gcr.io/${gcp.config.project}/${imageName}:latest`,
   build: {
-    context: '../../',
-    dockerfile: '../../Dockerfile',
+    context: '../../server',
     platform: "linux/amd64"
   },
 

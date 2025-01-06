@@ -9,7 +9,7 @@ export const service = cluster.addService("PBService", {
   cpu: "0.25 vCPU",
   memory: `1 GB`,
   image: {
-    context: ".",
+    context: "server",
     dockerfile: "Dockerfile"
   },
   dev: {

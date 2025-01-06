@@ -24,7 +24,7 @@ export default $config({
       return {
         image_url: gcp.image.imageName,
         url: gcp.service.statuses[0].url,
-        dashboard_url: `${gcp.service.statuses[0].url}/_`,
+        dashboard_url: $interpolate`${gcp.service.statuses[0].url}/_`,
       };
     }
 

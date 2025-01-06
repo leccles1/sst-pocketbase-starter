@@ -6,16 +6,5 @@ import "sst"
 export {}
 declare module "sst" {
   export interface Resource {
-    "PBApi": {
-      "type": "sst.aws.ApiGatewayV2"
-      "url": string
-    }
-    "PBService": {
-      "service": string
-      "type": "sst.aws.Service"
-    }
-    "PBVpc": {
-      "type": "sst.aws.Vpc"
-    }
   }
 }
