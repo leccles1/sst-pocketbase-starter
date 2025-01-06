@@ -11,7 +11,11 @@ Pocketbase initialised as an "extended" instance (Not using a straight up built 
 
 Initial investigation, Cloudrun is MUCH cheaper than Fargate, and additionally scales to 0 (No running instances). Fargate doesn't easily support scale to 0 functionality.
 
-### Setup
+Scale to 0, means cloud run only charges when processing requests. Further to this 'cold starts' aren't bad at all. 
+
+It appears minimum spend on Fargate is about $7/8 a month with `0.25vCPU` and `1 GB` memory. Cloud run can be Zero
+### Setup
+
 Update placeholder values in sst config `sst.config.ts`
 
 ```
